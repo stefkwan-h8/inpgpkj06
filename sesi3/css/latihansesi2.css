@@ -53,3 +53,11 @@ body {
     color: green;
     border-color: green;
 }
+
+.logo {
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+}

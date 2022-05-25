@@ -1,0 +1,25 @@
+untuk membuat css kita buat file dengan extension .css
+
+untuk styling sebuah file html, ada 3 hal yang biasanya kita pilih untuk styling:
+- atribut id sebuah tag html
+- atribut class sebuah tag html
+- tag html nya (seperti html, body, p, h1, ol, ul, li, a, dan lainnya)
+
+untuk styling html, setelah kita pilih mau tag html, id, atau class, 
+tambahkan {} dan didalam kurung {} isi dengan
+property dan value css, seperti "color: red;" dan lainnya
+
+untuk memilih tag, kita langsung tulis namanya
+body {
+    color: red;
+}
+
+untuk memilih id, kita pakai tanda pagar
+#kotak1 {
+    color: red;
+}
+
+untuk memilih class, kita pakai titik
+.kotak {
+    color: red;
+}
