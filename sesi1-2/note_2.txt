@@ -1,0 +1,36 @@
+tag html ada yang sepasang, dan ada yang sendirian.
+
+contohnya, tag <html> punya pasangan </html>
+
+sementara tag <!DOCTYPE HTML> sendirian
+
+tag <br/> juga sendirian
+
+tag <img> juga sendirian
+* note, tag img selalu menggunakan atribut src
+<img src="lokasi file gambar">
+
+kebanyakan tag html biasanya sepasang seperti:
+- html <html> </html>
+- head <head> </head>
+- title <title> </title>
+- body <body> </body>
+- p <p> </p>
+- h1 <h1> </h1>
+
+tag yang sudah kita bahas:
+- !DOCTYPE HTML
+- html
+- head
+- title
+- body
+- h1, h2, h3 (paling kecil h6)
+- p
+- img
+- a (untuk bikin link)
+- ol dan ul (ol ordered 123, ul unordered bullet points)
+- li (list item, satu item di dalam ol atau ul)
+
+atribut id dan class bisa diberikan ke semua tag html
+- id adalah nama unik untuk satu tag tersebut
+- class adalah nama grup, boleh dipakai berkali kali

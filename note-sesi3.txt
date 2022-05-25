@@ -1,0 +1,6 @@
+untuk membuat css kita buat file dengan extension .css
+
+untuk styling sebuah file html, ada 3 hal yang biasanya kita pilih untuk styling:
+- atribut id sebuah tag html
+- atribut class sebuah tag html
+- tag html nya (seperti html, body, p, h1, ol, ul, li, a, dan lainnya)

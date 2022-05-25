@@ -1,0 +1,24 @@
+button {
+    color: red;
+    margin: 20px;
+    padding: 16px;
+    font-size: 64px;
+}
+
+#button2 {
+    color: green;
+}
+
+.tombol {
+    color: blue;
+}
+
+/* ini styling untuk h1 */
+h1 {
+    color: brown;
+    background-color: beige;
+    border-color: blueviolet;
+    border-radius: 12px;
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,20 @@
+.kotak1 {
+    font-size: 24px;
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+
+@media (min-width: 800px) {
+    .kotak1 {
+        width: 750px;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 700px) {
+    .kotak1 {
+        width: 600px;
+        background-color: green;
+    }    
+}
