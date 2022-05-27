@@ -1,1 +1,61 @@
 algoritma
+- satu set instruksi untuk komputer untuk menyelesaikan sebuah masalah
+- bisa berbentuk tulisan text 1 2 3 4 5 ... urut sampai selesai
+- bisa berbentuk gambar flowchart
+
+
+pseudocode
+- penulisan "code" tapi belum jadi code beneran
+- seperti menulis code, tapi tidak memakai peraturan bahasa pemrograman tertentu
+- pseudocode bisa kita translate ke bahasa pemrograman yang digunakan (misal JS, Python, Ruby, C, C++, ...)
+
+
+conditional (percabangan)
+- konsep melakukan suatu hal tertentu hanya kalau kondisi True, contoh: kalau lapar, maka makan
+- di komputer, conditional hanya punya dua jawaban: True dan False, iya dan tidak
+
+IF lapar
+    # disini code khusus kalau benar lapar
+    DO makan
+
+di pseudocode diatas, kalau orangnya tidak lapar, dia tidak melakukan apapun
+kita bisa menambahkan kondisi untuk False, jasi misalakan dia lapar dia makan, kalau dia tidak lapar, dia bisa ngapain
+
+IF lapar
+    # disini code khusus kalau benar lapar
+    DO makan
+ELSE
+    # disini code khusus kalau salah, tidak lapar
+    DO olahraga
+
+di pseudocode diatas, kalau orangnya lapar, dia makan
+dan kalau orangnya tidak lapar, dia olahraga
+
+
+looping (iteration) (perulangan)
+- melakukan hal yang sama berulang kali
+
+contoh: hitung jumlah bola merah dalam sebuah ember
+
+manusisa: hitung aja
+
+komputer: berikan algoritma
+1. untuk setiap bola dalam ember tersebut:
+    1. ambil 1 bola, dan cek apakah warnanya merah
+    2. jika warnanya merah, tambahkan 1 ke "total"
+2. semua bola sudah di cek, tampilkan "total"
+
+bagian dimana komputer mengambil 1 bola, cek warna, nambah "total" diulang untuk setiap bola dalam ember
+ini adalah looping
+
+Contoh algoritma menghitung luas lingkaran
+1. "pi" adalah 3.14
+2. "r" jadi-jari lingkaran adalah sebuah value
+3. "luas lingkaran" adalah "pi" dikali "r" dikali "r"
+4. "keliling lingkaran" adalah 2 dikali "pi" dikali "r"
+5. tampilkan "luas lingkaran"
+6. tampilkan "keliling lingkaran"
+
+
+* note untuk penamaan class
+class bisa lebih dari satu, ditulisnya dipisah spasi

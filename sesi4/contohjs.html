@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mencoba Inline CSS & Javascript</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: aliceblue;
+            }
+
+            section {
+                margin: 24px;
+                padding: 12px;
+                border: 2px dotted navy;
+                background-color: lightgrey;
+                border-radius: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>                
+            <h1>Inline CSS</h1>
+            <p>CSS bisa ditulis didalam sebuah halaman HTML, tidah harus dipisah ke file berbeda.
+                Tapi ini tidak di rekomendasikan, karena kita jadi harus edit CSS di file HTML, kalau
+                CSS panjang file nya jadi panjang juga. kurang rapi.
+            </p>
+            <p>caranya adalah menaruh tag style di dalam head</p>
+        </section>
+
+        <section>                
+            <h1>Inline Javascript</h1>
+            <p>JS juga bisa ditulis di dalam sebuah halaman HTML. sama, tidak di rekomendasikan juga, kurang rapi.
+                caranya adalah dengan menggunakan tag script di dalam body
+            </p>
+            <p>biasanya kita ambil sebuah elemen HTML menggunakan Javascript kemudian kita ubah ubah</p>
+        </section>
+        
+        <section>            
+            <h1>Contoh Button Counter</h1>
+            <button onclick="klik()">Klik aku untuk nambah 1</button>
+            <h2 id="total">0</h2>
+        </section>
+
+        <script>
+            counter = 0
+            function klik(){
+                counter = counter + 1
+                document.getElementById("total").innerHTML = counter
+            }
+        </script>
+    </body>
+</html>

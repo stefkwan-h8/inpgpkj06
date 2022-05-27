@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box-hitam {
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    height: 300px;
+    width: 600px;
+}
+
+.box-merah {
+    background-color: maroon;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+
+@media (min-width: 800px) {
+    .box-hitam {
+        width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .box-hitam {
+        width: 1200px;
+    }
+}
