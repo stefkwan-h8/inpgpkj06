@@ -1,0 +1,11 @@
+DOM
+document object model
+document (HTML) yang dimodelkan (diubah) jadi bentuk object (tipe data yang bisa dimengerti Javascript)
+
+contoh menggunakan DOM innerHTML https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+
+REGEX
+Regular Expression
+teknik untuk mencari pola text, bisa digunakan untuk mencari text tertentu dalam sebuah text lain
+
+latihan ReGex bisa disini https://regexr.com/

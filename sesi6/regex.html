@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan Regex</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Yuk Daftar buat Giveaway</h1>
+
+        <form>            
+            <label>email</label>
+            <input type="text" onchange="cekEmail()" id="teks-email">
+            <p id="note-email"></p>
+            <br>
+
+            <label>alamat</label>
+            <br>
+            <textarea cols="30" rows="10" id="teks-alamat" onchange="cekAlamat()"></textarea>
+            <br>
+
+            <button class="button">Delivery</button>
+            <button class="button" id="btn-pickup">Pickup</button>
+        </form>
+
+        <script>
+            let domAlamat = document.getElementById("teks-alamat")
+            let domEmail = document.getElementById("teks-email")
+            let domNoteEmail = document.getElementById("note-email")
+            let domBtnPickup = document.getElementById("btn-pickup")
+            
+            function cekAlamat(){
+                let alamat = domAlamat.value.toLowerCase()
+                // console.log(alamat)
+                // console.log(/jakarta/.test(alamat))
+                
+                // gunakan regex untuk cek apakah alamat ada "Jakarta"
+                // kalau ada "Jakarta" berikan tombol "pickup"
+                if (/jakarta/.test(alamat)){
+                    domBtnPickup.style.display = "block"
+                } else {
+                    domBtnPickup.style.display = "none"
+                }
+            }
+
+            function cekEmail(){
+                // gunakan reges untuk cek apakah email valid
+                // pattern teks @ teks .teks (.com, .co.id, .net, dll)
+                let email = domEmail.value
+                let pola_email = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+                
+                if (pola_email.test(email)){
+                    domNoteEmail.innerHTML = "email sudah <b>benar</b> polanya"
+                    domNoteEmail.style.color = "green"
+                } else {
+                    // domNoteEmail.innerText = "email <i>tidak valid</i>"
+                    // innerText tidak bisa baca tag html
+
+                    domNoteEmail.innerHTML = "email <i>tidak valid</i>"
+                    // innerHTML bisa baca dan bikin tag html
+
+                    domNoteEmail.style.color = "red"
+                }
+            }
+            
+        </script>
+    </body>
+</html>

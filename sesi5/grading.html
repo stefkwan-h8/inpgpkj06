@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grading</title>
+    </head>
+
+    <body>
+        <label>Nilai:</label>
+        <input type="number" id="nilai">
+        <button onclick="cekGrade()">Cek Grade</button>
+        <p id="hasil"></p>
+
+        <script>
+            function cekGrade(){
+                let nilai = document.getElementById("nilai").value
+
+                let grade = "F"
+
+                if (nilai > 90){
+                    grade = "A"
+                } else if (nilai > 70){
+                    grade = "B"
+                } else if (nilai > 50) {
+                    grade = "C"
+                } else {
+                    grade = "D"
+                }
+
+                if (nilai > 100 || nilai < 0){
+                    grade = "invalid"
+                }
+
+                document.getElementById("hasil").innerHTML = grade
+            }
+        </script>
+    </body>
+</html>

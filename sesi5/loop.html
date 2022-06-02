@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>looping</title>
+        <style>
+            .red {
+                background-color: maroon;
+                color: white;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button onclick="hukuman()">Saya telat</button>
+        <button onclick="hukuman2()">Saya terlambat</button>
+        <button onclick="hapus()" class="red">CLEAR</button>
+        <ol id="tulisan"></ol>
+        
+        <script>
+            console.log("halo")
+            
+            function hukuman(){
+                let counter = 0
+                while (counter < 10){
+                    document.getElementById("tulisan").innerHTML += "<li>saya tidak akan telat lagi</li>"
+                    counter++
+                }
+            }
+            
+            function hukuman2(){
+                for (let counter = 0; counter < 10; counter++){
+                    document.getElementById("tulisan").innerHTML += "<li>saya tidak akan terlambat lagi</li>"
+                }
+            }
+
+            function hapus(){
+                document.getElementById("tulisan").innerHTML = ""                
+            }
+        </script>
+    </body>
+</html>

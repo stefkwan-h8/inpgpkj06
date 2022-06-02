@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ubah Warna Text dan Background
+        </title>
+        <meta name="description" content="ini adalah web untuk menggunakan dom mengubah warna teks dan warna latar">
+    </head>
+
+    <body>
+        <h1>Aplikasi Ubah Warna</h1>
+
+        <label>Ubah Latar:</label>
+        <input type="color" id="latar">
+        <br>
+
+        <label>Ubah Teks:</label>
+        <input type="color" id="teks">
+        <br>
+
+        <label>Ubah Padding:</label>
+        <input type="number" id="pad" onchange="ubahPadding()">
+
+        <script>
+            let domLatar = document.getElementById("latar")
+            let domTeks = document.getElementById("teks")
+            let domPad = document.getElementById("pad")
+
+            // dengerin event
+            domLatar.addEventListener("change", () => {
+                // console.log("domLatar berubah inputnya")
+                // console.log(domLatar.value)
+                document.body.style.backgroundColor = domLatar.value
+            })
+
+            domTeks.addEventListener("change", () => {
+                // console.log("domTeks berubah inputnya")
+                // console.log(domTeks.value)
+                document.body.style.color = domTeks.value
+            })
+
+            function ubahPadding(){
+                document.body.style.padding = domPad.value + "px"
+            }
+            
+        </script>
+    </body>
+</html>

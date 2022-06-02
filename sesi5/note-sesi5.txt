@@ -1,0 +1,78 @@
+Javascript
+- tipe data yang dimengerti Javascript
+- simpan data di variable (memberi nama ke sebuah data jadi bisa dipanggil lagi)
+- function (memberi nama ke satu set code, mungkin isinya bisa bbrp variable, bbrp conditional, bbrp looping)
+- conditional (percabangan, iya/ngk, true/false)
+- looping (melakukan suatu code ber kali kali sampai kondisi jadi false)
+
+tipe data yang dimengerti Javascript
+- integer (numerik, angka tanpa koma, contoh 1287)
+- float (numerik, angka dengan koma, contoh 12.87 atau 1.0 atau 3.7563)
+- string (text, asalkan dikutip, boleh pakai kutip 'saya text 123 !!' "saya text 123 !!" `saya text 123 !!`)
+- boolean (true false)
+    - yang dianggap false hanya data kosong: 0 0.0 "" '' `` false
+- array (sekumpulan data, bisa ada data dalam data)
+    - contoh: nama-nama murid kelas inpg pkj 06, ada 24 murid. membuat 24 variable berbeda? tidak
+    buat 1 variable saja isi 24 nama, dengan menggunakan array berisi 24 string berbeda.
+- object (sekumpulan data juga seperti array, cuma cara tulis dan cara baca sedikit berbeda)
+
+variable
+- memberi sebuah nama
+- nama ini bisa diisi data
+- cara bikin variable menggunakan let atau const lalu nama variable nya
+- agar tidak salah tulis ada bbrp rule penulisan nama variable:
+    - huruf kecil semua
+    - kalau huruf 2 kata atau lebih, maka spasi kita gantikan _
+    - selalu dimulai dengan text
+
+let nama_variable = "contoh"
+
+let: variable yang nantinya isinya bisa diubah
+const: variable yang isinya tidak pernah berubah
+var: cara jadul untuk membuat variable, sama seperti let (let cara barunya)
+
+
+function
+- memberi sebuah nama
+- nama ini bisa diisi code, termasuk variable, loop, conditional, dan function lainnya
+- cara bikin gunakan function lalu nama fungsinya, lalu (), lalu {}
+- code milik function dimasukkan kedalam {} nya
+- agar tidak salah tulis ada bbrp rule penulisan nama variable:
+    - huruf kecil semua kecuali setelah spasi
+    - kalau huruf 2 kata atau lebih, maka spasi dihapus, huruf pertama kata berikutnya gunakan huruf besar
+    - selalu dimulai dengan text
+
+function namaFunction() {
+
+}
+
+
+**rules penulisan nama itu kesepakatan bersama, kita menggunakan snake_case untuk variable dan camelCase untuk function
+
+
+HTML
+
+event - kejadian yang terjadi di halaman HTML kita, list nya ada di: https://www.w3schools.com/tags/ref_eventattributes.asp
+
+contoh event yang sering kita gunakan:
+- onclick (elemen html di klik)
+- onload (html selesai loading)
+- onsubmit (form di submit)
+- mousehover (mouse lewat)
+- keyboardpress (ngetik)
+
+
+untuk latihan sendiri, mulai dari yang paling mendasar dulu:
+1. buat file HTML
+2. buat file CSS
+3. bisa link file HTML dan CSS nya
+4. bisa bikin <script> di dalam HTML
+5. bisa nambah event ke elemen HTML, suruh jalanin function
+6. buat function yang dijalanin tadi di dalam script
+7. function nya bisa console.log("halo")
+8. cobain document.getElementById("namaidhtml") untuk ambil value/ innerHTML sebuah elemen HTML
+9. setelah berhasil ambil value tersebut, masukin ke variable
+10. console log variable nya
+11. coba ubah document.getElementById("namaidhtml").innerHTML menjadi hal lain
+12. code dalam function boleh kita tambahkan conditional
+13. code dalam function boleh kita tambahkan loop
